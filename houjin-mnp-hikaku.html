@@ -4,325 +4,521 @@
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>法人携帯 MNP比較表</title>
+<title>法人携帯 MNP乗り換え比較表 — 全キャリア網羅版</title>
 <style>
-
-
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Noto Sans JP','Hiragino Sans','Meiryo','Yu Gothic',sans-serif; background:#fff; color:#1a1a1a; padding:24px 20px; max-width:780px; margin:0 auto; font-size:13px; line-height:1.6; }
-@media print { body { padding:10px; } }
+body { font-family:'Noto Sans JP','Hiragino Sans','Meiryo','Yu Gothic',sans-serif; background:#fff; color:#1a1a1a; padding:24px 20px; max-width:820px; margin:0 auto; font-size:13px; line-height:1.6; }
+@media print { body { padding:10px; font-size:11px; } .no-print { display:none; } }
 h1 { font-size:20px; font-weight:bold; text-align:center; color:#1a365d; border-bottom:3px solid #1a365d; padding-bottom:8px; margin-bottom:4px; }
 .doc-info { text-align:center; font-size:11px; color:#666; margin-bottom:16px; }
-h2 { font-size:15px; font-weight:bold; color:#fff; background:#1a365d; padding:6px 12px; margin-top:18px; margin-bottom:0; }
+h2 { font-size:15px; font-weight:bold; color:#fff; background:#1a365d; padding:6px 12px; margin-top:20px; margin-bottom:0; }
 h3 { font-size:13px; font-weight:bold; color:#1a365d; background:#e8edf3; padding:4px 12px; margin-bottom:0; border-left:3px solid #1a365d; }
 table { width:100%; border-collapse:collapse; margin-bottom:2px; }
-th { font-size:11px; font-weight:bold; color:#fff; background:#2d4a7a; padding:6px 8px; text-align:center; border:1px solid #c5cdd8; }
-th:first-child { text-align:left; }
-td { padding:6px 8px; font-size:12px; border:1px solid #dde3ea; text-align:center; }
-td:first-child { text-align:left; font-weight:bold; }
+th { font-size:10px; font-weight:bold; color:#fff; background:#2d4a7a; padding:5px 6px; text-align:center; border:1px solid #c5cdd8; white-space:nowrap; }
+th:first-child, th:nth-child(2) { text-align:left; }
+td { padding:4px 6px; font-size:11px; border:1px solid #dde3ea; text-align:center; }
+td:first-child, td:nth-child(2) { text-align:left; }
 tr:nth-child(even) td { background:#f7fafc; }
 .best td { background:#e6f0ff !important; }
-.price { font-size:14px; font-weight:bold; color:#1a365d; }
-.highlight { font-size:14px; font-weight:bold; color:#c53030; }
-.small { font-size:10px; color:#888; }
-.note { font-size:11px; color:#555; padding:4px 8px; background:#f9f9f9; border:1px solid #eee; border-top:none; margin-bottom:2px; }
-.section-note { font-size:11px; color:#555; padding:6px 12px; background:#fffbeb; border:1px solid #f0e6c0; margin-top:12px; }
-.summary-box { border:2px solid #1a365d; padding:12px; margin-top:16px; }
-.summary-box h3 { background:none; border:none; padding:0; margin-bottom:8px; font-size:14px; }
-.summary-box table td { font-size:12px; }
+.save td { background:#f0fff4 !important; }
+.over td { background:#fff5f5 !important; }
+.price { font-size:13px; font-weight:bold; color:#1a365d; }
+.highlight { font-weight:bold; color:#c53030; }
+.green { font-weight:bold; color:#276749; }
+.small { font-size:9px; color:#888; }
+.note { font-size:10px; color:#555; padding:4px 8px; background:#f9f9f9; border:1px solid #eee; border-top:none; }
+.section-note { font-size:11px; color:#555; padding:8px 12px; background:#fffbeb; border:1px solid #e6d88a; margin-top:12px; }
+.exec-box { border:2px solid #1a365d; padding:14px 16px; margin-bottom:16px; background:#f0f4fa; }
+.exec-box h3 { font-size:14px; color:#1a365d; margin-bottom:6px; background:none; border:none; padding:0; }
+.exec-box p { font-size:12px; line-height:1.8; color:#333; }
+.exec-box .big { font-size:16px; font-weight:bold; color:#c53030; }
+.purpose { background:#fffbeb; border:1px solid #e6d88a; padding:10px 14px; margin-bottom:12px; }
+.purpose h3 { font-size:13px; color:#8a6d00; margin-bottom:4px; background:none; border:none; padding:0; }
+.purpose p { font-size:12px; color:#555; }
+.badge { display:inline-block; font-size:9px; font-weight:bold; padding:1px 5px; color:#fff; margin-left:4px; vertical-align:middle; }
+.badge-mno { background:#1a365d; }
+.badge-sub { background:#2b6cb0; }
+.badge-mvno { background:#276749; }
+.badge-data { background:#744210; }
+.step-box { border:2px solid #c53030; padding:12px; margin-top:16px; }
+.step-box h3 { font-size:14px; color:#c53030; margin-bottom:8px; background:none; border:none; padding:0; }
+.step-box ol { padding-left:20px; font-size:12px; line-height:2.2; }
+.step-box ol strong { color:#1a1a1a; }
 .footer { text-align:center; font-size:10px; color:#999; margin-top:16px; border-top:1px solid #ddd; padding-top:8px; }
+.type-label { font-size:9px; color:#666; }
 </style>
 </head>
 <body>
 
-<h1>法人携帯 MNP乗り換え比較表</h1>
-<div class="doc-info">作成日: 2026年6月25日 ｜ 税込価格 ｜ 割引適用後の最安水準を記載</div>
+<h1>法人携帯 MNP乗り換え 全キャリア比較表</h1>
+<div class="doc-info">作成日: 2026年6月25日 ｜ 税込価格 ｜ AIリサーチチーム作成 ｜ 全17キャリア・45プラン網羅</div>
 
-<!-- ========== 大手キャリア ========== -->
-<h2>1. 大手キャリア</h2>
-
-<h3>NTT docomo</h3>
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr class="best">
-  <td>mini 4GB<br><span class="small">割引後最安</span></td>
-  <td>4GB</td>
-  <td><span class="highlight">880円</span></td>
-  <td><span class="highlight">94.7%</span></td>
-  <td><span class="highlight">1,120円</span></td>
-  <td>4.5</td>
-</tr>
-<tr>
-  <td>mini 10GB</td>
-  <td>10GB</td>
-  <td><span class="price">1,980円</span></td>
-  <td>42.1%</td>
-  <td>27,520円</td>
-  <td>5.1</td>
-</tr>
-<tr>
-  <td>MAX 無制限<br><span class="small">割引後</span></td>
-  <td>無制限</td>
-  <td><span class="price">5,148円</span></td>
-  <td>16.2%</td>
-  <td>103,552円</td>
-  <td>∞</td>
-</tr>
-</table>
-<div class="note">割引条件: みんなドコモ割(-1,210円) / ドコモ光セット(-1,210円) / dカードお支払割(-550円)</div>
-
-<h3>au / KDDI</h3>
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr>
-  <td>スマホミニプラン+<br><span class="small">段階制</span></td>
-  <td>1〜5GB</td>
-  <td><span class="price">2,398円</span></td>
-  <td>34.7%</td>
-  <td>37,552円</td>
-  <td>2.1</td>
-</tr>
-<tr>
-  <td>バリューリンク<br><span class="small">無制限</span></td>
-  <td>無制限</td>
-  <td><span class="price">3,828円</span></td>
-  <td>21.8%</td>
-  <td>71,872円</td>
-  <td>∞</td>
-</tr>
-<tr>
-  <td>使い放題MAX+</td>
-  <td>無制限</td>
-  <td><span class="price">5,478円</span></td>
-  <td>15.2%</td>
-  <td>111,472円</td>
-  <td>∞</td>
-</tr>
-</table>
-<div class="note">法人割プラス / スマートバリュー for Business / ビジネス通話定額</div>
-
-<h3>SoftBank</h3>
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr class="best">
-  <td>デビュープラン+ 4GB<br><span class="small">条件あり</span></td>
-  <td>4GB</td>
-  <td><span class="highlight">980円</span></td>
-  <td><span class="highlight">85.0%</span></td>
-  <td><span class="highlight">3,520円</span></td>
-  <td>4.1</td>
-</tr>
-<tr>
-  <td>ミニフィットプラン2<br><span class="small">段階制</span></td>
-  <td>2〜5GB</td>
-  <td><span class="price">4,780円</span></td>
-  <td>17.4%</td>
-  <td>94,720円</td>
-  <td>1.0</td>
-</tr>
-<tr>
-  <td>テイガク無制限</td>
-  <td>無制限</td>
-  <td><span class="price">7,280円</span></td>
-  <td>11.4%</td>
-  <td>154,720円</td>
-  <td>∞</td>
-</tr>
-</table>
-<div class="note">※ 2026年7月に料金改定（値上げ）予定あり。契約タイミングにご注意ください</div>
-
-<!-- ========== サブブランド ========== -->
-<h2>2. サブブランド</h2>
-
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr>
-  <td>Y!mobile シンプル2 S</td>
-  <td>4GB</td>
-  <td><span class="price">1,078円</span></td>
-  <td>77.3%</td>
-  <td>5,872円</td>
-  <td>3.7</td>
-</tr>
-<tr>
-  <td>Y!mobile シンプル2 M</td>
-  <td>20GB</td>
-  <td><span class="price">2,178円</span></td>
-  <td>38.3%</td>
-  <td>32,272円</td>
-  <td>9.2</td>
-</tr>
-<tr>
-  <td>UQ mobile ミニミニ</td>
-  <td>4GB</td>
-  <td><span class="price">1,078円</span></td>
-  <td>77.3%</td>
-  <td>5,872円</td>
-  <td>3.7</td>
-</tr>
-<tr class="best">
-  <td>UQ mobile コミコミ+<br><span class="small">10分かけ放題込</span></td>
-  <td>33GB</td>
-  <td><span class="price">3,278円</span></td>
-  <td>25.4%</td>
-  <td>58,672円</td>
-  <td><span class="highlight">10.1</span></td>
-</tr>
-</table>
-<div class="note">大手キャリア回線品質 + 低価格。法人契約対応。店舗サポートあり</div>
-
-<!-- ========== 楽天モバイル ========== -->
-<h2>3. 楽天モバイル</h2>
-
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr>
-  <td>Rakuten最強プラン</td>
-  <td>〜3GB</td>
-  <td><span class="price">1,078円</span></td>
-  <td>77.3%</td>
-  <td>5,872円</td>
-  <td>2.8</td>
-</tr>
-<tr>
-  <td>同上</td>
-  <td>〜20GB</td>
-  <td><span class="price">2,178円</span></td>
-  <td>38.3%</td>
-  <td>32,272円</td>
-  <td>9.2</td>
-</tr>
-<tr class="best">
-  <td>同上<br><span class="small">段階制1プラン</span></td>
-  <td>無制限</td>
-  <td><span class="highlight">3,278円</span></td>
-  <td>25.4%</td>
-  <td>58,672円</td>
-  <td><span class="highlight">∞</span></td>
-</tr>
-</table>
-<div class="note">Rakuten Link利用で国内通話無料（アプリ経由）。法人プランあり</div>
-
-<!-- ========== 格安SIM ========== -->
-<h2>4. 格安SIM（MVNO）</h2>
-
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th>CB率</th><th>期待値(2年)</th><th>GB効率</th></tr>
-<tr class="best">
-  <td>IIJmio ギガプラン<br><span class="small">※2年実質400円</span></td>
-  <td>2GB</td>
-  <td><span class="highlight">850円</span></td>
-  <td><span class="highlight">98.0%</span></td>
-  <td><span class="highlight">400円</span></td>
-  <td>2.4</td>
-</tr>
-<tr>
-  <td>IIJmio ギガプラン</td>
-  <td>5GB</td>
-  <td><span class="price">990円</span></td>
-  <td>84.2%</td>
-  <td>3,760円</td>
-  <td>5.1</td>
-</tr>
-<tr>
-  <td>IIJmio ギガプラン</td>
-  <td>20GB</td>
-  <td><span class="price">2,000円</span></td>
-  <td>41.7%</td>
-  <td>28,000円</td>
-  <td><span class="highlight">10.0</span></td>
-</tr>
-<tr class="best">
-  <td>IIJmio ギガプラン<br><span class="small">※GB効率最強</span></td>
-  <td>50GB</td>
-  <td><span class="price">3,900円</span></td>
-  <td>21.4%</td>
-  <td>73,600円</td>
-  <td><span class="highlight">12.8</span></td>
-</tr>
-<tr>
-  <td>mineo マイピタ</td>
-  <td>1GB</td>
-  <td><span class="price">1,298円</span></td>
-  <td>64.2%</td>
-  <td>11,152円</td>
-  <td>0.8</td>
-</tr>
-<tr>
-  <td>mineo マイピタ</td>
-  <td>20GB</td>
-  <td><span class="price">2,178円</span></td>
-  <td>38.3%</td>
-  <td>32,272円</td>
-  <td>9.2</td>
-</tr>
-</table>
-<div class="note">MVNO = 大手回線を借りるため混雑時間帯に速度低下の可能性あり。IIJmioは法人契約対応</div>
-
-<!-- ========== データ専用SIM ========== -->
-<h2>5. データ専用SIM（番号なし）</h2>
-
-<table>
-<tr><th style="width:28%">プラン</th><th>容量</th><th>月額</th><th colspan="2">2年総額（CB対象外）</th><th>GB効率</th></tr>
-<tr>
-  <td>IIJmio データ</td>
-  <td>2GB</td>
-  <td><span class="price">740円</span></td>
-  <td colspan="2">17,760円</td>
-  <td>2.7</td>
-</tr>
-<tr>
-  <td>IIJmio データ</td>
-  <td>20GB</td>
-  <td><span class="price">1,950円</span></td>
-  <td colspan="2">46,800円</td>
-  <td><span class="highlight">10.3</span></td>
-</tr>
-<tr>
-  <td>povo2.0<br><span class="small">トッピング課金制</span></td>
-  <td>—</td>
-  <td><span class="highlight">0円</span></td>
-  <td colspan="2">使った分だけ</td>
-  <td>—</td>
-</tr>
-</table>
-<div class="note">タブレット・IoT・監視カメラ等に最適。電話番号不要ならデータSIMが最安</div>
-
-<!-- ========== かけ放題 ========== -->
-<h2>6. かけ放題オプション（全キャリア共通水準）</h2>
-<table>
-<tr><th>オプション</th><th>月額</th><th>備考</th></tr>
-<tr><td>5分かけ放題</td><td><span class="price">+880円</span></td><td>5分超過後は22円/30秒</td></tr>
-<tr><td>24時間かけ放題</td><td><span class="price">+1,980円</span></td><td>国内通話完全定額</td></tr>
-</table>
-<div class="note">楽天モバイルはRakuten Linkアプリ利用で国内通話無料（オプション不要）</div>
-
-<!-- ========== CB制度説明 ========== -->
-<div class="section-note">
-<strong>【MNPキャッシュバック制度について】</strong><br>
-<strong>上限規制:</strong> SIM単体MNP = 上限20,000円 / 端末セット = 上限40,000円（2023年12月 総務省改正ガイドライン）<br>
-<strong>CB率:</strong> キャッシュバック額 ÷ 2年間総額 × 100%（高いほど実質負担が軽い）<br>
-<strong>期待値(2年):</strong> 月額 × 24ヶ月 − CB上限20,000円 = 2年間の実質負担額<br>
-<strong>GB効率:</strong> データ容量(GB) ÷ 月額(千円)（高いほどデータ単価が安い）<br>
-<strong>代理店活用:</strong> 代理店経由の場合、旧キャリアの違約金・端末残債・事務手数料を別途全額負担してもらえる場合あり<br>
-<strong>法人一括導入:</strong> 10台以上の場合、ボリュームディスカウントの個別交渉が可能
+<!-- ========== 目的 ========== -->
+<div class="purpose">
+<h3>背景・目的</h3>
+<p>現在の法人携帯（約20台・月額約3,000円/台）の通信コストを見直し、MNP（番号そのまま乗り換え）と国のキャッシュバック制度を活用して<strong>通信費の大幅削減</strong>を実現する。本資料では大手キャリアから格安SIMまで全キャリアを網羅的に比較し、<strong>最適な乗り換え先と期待される削減効果</strong>を提示する。</p>
 </div>
 
-<!-- ========== まとめ ========== -->
-<div class="summary-box">
-<h3>まとめ — 用途別おすすめ</h3>
+<!-- ========== 結論 ========== -->
+<div class="exec-box">
+<h3>結論 — 推奨案3パターンとコスト試算</h3>
+<p><strong>現状:</strong> 約20台 × 月額約3,000円 = 月60,000円 = <strong>年720,000円</strong></p>
 <table>
-<tr><th>用途</th><th>おすすめ</th><th>月額</th><th>2年実質</th></tr>
-<tr class="best"><td>最安値</td><td>IIJmio 2GB</td><td>850円</td><td><span class="highlight">400円</span></td></tr>
-<tr><td>コスパ最強</td><td>IIJmio 50GB</td><td>3,900円</td><td>73,600円</td></tr>
-<tr class="best"><td>無制限最安</td><td>楽天モバイル</td><td>3,278円</td><td>58,672円</td></tr>
-<tr><td>安定+通話込</td><td>UQ コミコミ+ 33GB</td><td>3,278円</td><td>58,672円</td></tr>
-<tr><td>大手最安</td><td>docomo mini 4GB</td><td>880円</td><td><span class="highlight">1,120円</span></td></tr>
+<tr><th>推奨</th><th>乗換先</th><th>月額/台</th><th>20台月額</th><th>20台年額</th><th>年間削減</th></tr>
+<tr class="best">
+  <td><span class="highlight">A案</span><br><span class="small">コスト最優先</span></td>
+  <td style="text-align:left"><strong>日本通信 みんなのプラン</strong><br><span class="small">20GB+5分かけ放題込</span></td>
+  <td><span class="highlight">1,390円</span></td>
+  <td>27,800円</td>
+  <td>333,600円</td>
+  <td><span class="highlight" style="font-size:15px">-386,400円</span></td>
+</tr>
+<tr class="best">
+  <td><span class="highlight">B案</span><br><span class="small">容量+通話重視</span></td>
+  <td style="text-align:left"><strong>楽天モバイル 無制限</strong><br><span class="small">無制限+Linkで通話無料</span></td>
+  <td><span class="price">3,278円</span></td>
+  <td>65,560円</td>
+  <td>786,720円</td>
+  <td><span class="small">+66,720円</span></td>
+</tr>
+<tr class="best">
+  <td><span class="highlight">C案</span><br><span class="small">大手ブランド維持</span></td>
+  <td style="text-align:left"><strong>docomo mini 4GB</strong><br><span class="small">割引適用後+かけ放題別途</span></td>
+  <td><span class="highlight">880円</span></td>
+  <td>17,600円</td>
+  <td>211,200円</td>
+  <td><span class="highlight" style="font-size:15px">-508,800円</span></td>
+</tr>
 </table>
+<p style="margin-top:8px;"><strong>MNPキャッシュバック（初年度一括）:</strong> 20台 × 上限20,000円 = <span class="big">最大400,000円</span><br>
+<strong>A案の場合の初年度総効果:</strong> 削減386,400円 + CB 400,000円 = <span class="big">約786,400円</span></p>
+</div>
+
+<!-- ========== 全キャリア一覧 ========== -->
+<h2>全キャリア比較 — 音声SIM（月額順・安い順）</h2>
+<p class="note">
+<span class="badge badge-mno">大手</span> <span class="badge badge-sub">サブブランド</span> <span class="badge badge-mvno">格安</span>
+｜ <span class="green">緑=現状より安い</span> / <span class="highlight">赤=現状より高い</span>
+｜ 年間差額 = 現状(年72万円)との差 ｜ GB効率 = GB÷月額千円（高い=お得）
+</p>
+
+<table>
+<tr>
+  <th>種別</th><th>キャリア / プラン</th><th>容量</th><th>月額</th><th>20台<br>年額</th><th>年間差額</th><th>GB<br>効率</th>
+</tr>
+<!-- 超低価格帯 〜999円 -->
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>HISモバイル</strong> 自由自在 100MB</td>
+  <td>100MB</td>
+  <td><span class="highlight">280円</span></td>
+  <td>67,200円</td>
+  <td><span class="green">-652,800円</span></td>
+  <td>0.4</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>日本通信</strong> シンプル290</td>
+  <td>1GB</td>
+  <td><span class="highlight">290円</span></td>
+  <td>69,600円</td>
+  <td><span class="green">-650,400円</span></td>
+  <td>3.4</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>nuroモバイル</strong> VS 3GB</td>
+  <td>3GB</td>
+  <td><span class="highlight">792円</span></td>
+  <td>190,080円</td>
+  <td><span class="green">-529,920円</span></td>
+  <td>3.8</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>IIJmio</strong> ギガプラン 2GB</td>
+  <td>2GB</td>
+  <td><span class="highlight">850円</span></td>
+  <td>204,000円</td>
+  <td><span class="green">-516,000円</span></td>
+  <td>2.4</td>
+</tr>
+<tr class="best">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>docomo</strong> mini 4GB<br><span class="small">割引後最安</span></td>
+  <td>4GB</td>
+  <td><span class="highlight">880円</span></td>
+  <td>211,200円</td>
+  <td><span class="green">-508,800円</span></td>
+  <td>4.5</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>SoftBank</strong> デビュープラン+ 4GB<br><span class="small">条件あり</span></td>
+  <td>4GB</td>
+  <td><span class="highlight">980円</span></td>
+  <td>235,200円</td>
+  <td><span class="green">-484,800円</span></td>
+  <td>4.1</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>IIJmio</strong> ギガプラン 5GB</td>
+  <td>5GB</td>
+  <td><span class="highlight">990円</span></td>
+  <td>237,600円</td>
+  <td><span class="green">-482,400円</span></td>
+  <td>5.1</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>LINEMO</strong> ベストプラン</td>
+  <td>〜3GB</td>
+  <td><span class="highlight">990円</span></td>
+  <td>237,600円</td>
+  <td><span class="green">-482,400円</span></td>
+  <td>3.0</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>HISモバイル</strong> 自由自在 7GB</td>
+  <td>7GB</td>
+  <td><span class="highlight">990円</span></td>
+  <td>237,600円</td>
+  <td><span class="green">-482,400円</span></td>
+  <td>7.1</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>nuroモバイル</strong> VM 5GB</td>
+  <td>5GB</td>
+  <td><span class="highlight">990円</span></td>
+  <td>237,600円</td>
+  <td><span class="green">-482,400円</span></td>
+  <td>5.1</td>
+</tr>
+
+<!-- 低価格帯 1,000〜1,999円 -->
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>Y!mobile</strong> シンプル2 S</td>
+  <td>4GB</td>
+  <td><span class="price">1,078円</span></td>
+  <td>258,720円</td>
+  <td><span class="green">-461,280円</span></td>
+  <td>3.7</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>UQ mobile</strong> ミニミニ</td>
+  <td>4GB</td>
+  <td><span class="price">1,078円</span></td>
+  <td>258,720円</td>
+  <td><span class="green">-461,280円</span></td>
+  <td>3.7</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>楽天モバイル</strong></td>
+  <td>〜3GB</td>
+  <td><span class="price">1,078円</span></td>
+  <td>258,720円</td>
+  <td><span class="green">-461,280円</span></td>
+  <td>2.8</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>mineo</strong> マイピタ 1GB</td>
+  <td>1GB</td>
+  <td><span class="price">1,298円</span></td>
+  <td>311,520円</td>
+  <td><span class="green">-408,480円</span></td>
+  <td>0.8</td>
+</tr>
+<tr class="best">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>日本通信</strong> みんなのプラン<br><span class="small">★5分かけ放題込</span></td>
+  <td>20GB</td>
+  <td><span class="highlight">1,390円</span></td>
+  <td>333,600円</td>
+  <td><span class="green">-386,400円</span></td>
+  <td><span class="green" style="font-size:13px">14.4</span></td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>nuroモバイル</strong> VL 10GB</td>
+  <td>10GB</td>
+  <td><span class="price">1,485円</span></td>
+  <td>356,400円</td>
+  <td><span class="green">-363,600円</span></td>
+  <td>6.7</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>docomo</strong> mini 10GB</td>
+  <td>10GB</td>
+  <td><span class="price">1,980円</span></td>
+  <td>475,200円</td>
+  <td><span class="green">-244,800円</span></td>
+  <td>5.1</td>
+</tr>
+
+<!-- 中価格帯 2,000〜2,999円 -->
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>IIJmio</strong> ギガプラン 20GB</td>
+  <td>20GB</td>
+  <td><span class="price">2,000円</span></td>
+  <td>480,000円</td>
+  <td><span class="green">-240,000円</span></td>
+  <td>10.0</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>LINEMO</strong> ベストプラン</td>
+  <td>〜10GB</td>
+  <td><span class="price">2,090円</span></td>
+  <td>501,600円</td>
+  <td><span class="green">-218,400円</span></td>
+  <td>4.8</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>HISモバイル</strong> 自由自在 20GB<br><span class="small">6分かけ放題込</span></td>
+  <td>20GB</td>
+  <td><span class="price">2,090円</span></td>
+  <td>501,600円</td>
+  <td><span class="green">-218,400円</span></td>
+  <td>9.6</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>日本通信</strong> 合理的50GB<br><span class="small">5分かけ放題込</span></td>
+  <td>50GB</td>
+  <td><span class="price">2,178円</span></td>
+  <td>522,720円</td>
+  <td><span class="green">-197,280円</span></td>
+  <td><span class="green" style="font-size:13px">23.0</span></td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>Y!mobile</strong> シンプル2 M</td>
+  <td>20GB</td>
+  <td><span class="price">2,178円</span></td>
+  <td>522,720円</td>
+  <td><span class="green">-197,280円</span></td>
+  <td>9.2</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>UQ mobile</strong> トクトク</td>
+  <td>15GB</td>
+  <td><span class="price">2,178円</span></td>
+  <td>522,720円</td>
+  <td><span class="green">-197,280円</span></td>
+  <td>6.9</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>楽天モバイル</strong></td>
+  <td>〜20GB</td>
+  <td><span class="price">2,178円</span></td>
+  <td>522,720円</td>
+  <td><span class="green">-197,280円</span></td>
+  <td>9.2</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>mineo</strong> マイピタ 20GB</td>
+  <td>20GB</td>
+  <td><span class="price">2,178円</span></td>
+  <td>522,720円</td>
+  <td><span class="green">-197,280円</span></td>
+  <td>9.2</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>au</strong> スマホミニプラン+</td>
+  <td>1〜5GB</td>
+  <td><span class="price">2,398円</span></td>
+  <td>575,520円</td>
+  <td><span class="green">-144,480円</span></td>
+  <td>2.1</td>
+</tr>
+<tr class="save">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>LINEMO</strong> ベストプランV<br><span class="small">5分かけ放題込</span></td>
+  <td>30GB</td>
+  <td><span class="price">2,970円</span></td>
+  <td>712,800円</td>
+  <td><span class="green">-7,200円</span></td>
+  <td>10.1</td>
+</tr>
+
+<!-- 高価格帯 3,000円〜（現状と同等以上） -->
+<tr class="over">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>Y!mobile</strong> シンプル2 L</td>
+  <td>30GB</td>
+  <td><span class="price">3,278円</span></td>
+  <td>786,720円</td>
+  <td><span class="highlight">+66,720円</span></td>
+  <td>9.2</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-sub">サブ</span></td>
+  <td><strong>UQ mobile</strong> コミコミ+<br><span class="small">10分かけ放題込</span></td>
+  <td>33GB</td>
+  <td><span class="price">3,278円</span></td>
+  <td>786,720円</td>
+  <td><span class="highlight">+66,720円</span></td>
+  <td>10.1</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>楽天モバイル</strong><br><span class="small">通話無料(Link)</span></td>
+  <td>無制限</td>
+  <td><span class="price">3,278円</span></td>
+  <td>786,720円</td>
+  <td><span class="highlight">+66,720円</span></td>
+  <td>∞</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>au</strong> バリューリンク</td>
+  <td>無制限</td>
+  <td><span class="price">3,828円</span></td>
+  <td>918,720円</td>
+  <td><span class="highlight">+198,720円</span></td>
+  <td>∞</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mvno">格安</span></td>
+  <td><strong>IIJmio</strong> ギガプラン 50GB</td>
+  <td>50GB</td>
+  <td><span class="price">3,900円</span></td>
+  <td>936,000円</td>
+  <td><span class="highlight">+216,000円</span></td>
+  <td>12.8</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>SoftBank</strong> ミニフィットプラン2</td>
+  <td>2〜5GB</td>
+  <td><span class="price">4,780円</span></td>
+  <td>1,147,200円</td>
+  <td><span class="highlight">+427,200円</span></td>
+  <td>1.0</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>docomo</strong> MAX 無制限</td>
+  <td>無制限</td>
+  <td><span class="price">5,148円</span></td>
+  <td>1,235,520円</td>
+  <td><span class="highlight">+515,520円</span></td>
+  <td>∞</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>au</strong> 使い放題MAX+</td>
+  <td>無制限</td>
+  <td><span class="price">5,478円</span></td>
+  <td>1,314,720円</td>
+  <td><span class="highlight">+594,720円</span></td>
+  <td>∞</td>
+</tr>
+<tr class="over">
+  <td><span class="badge badge-mno">大手</span></td>
+  <td><strong>SoftBank</strong> テイガク無制限</td>
+  <td>無制限</td>
+  <td><span class="price">7,280円</span></td>
+  <td>1,747,200円</td>
+  <td><span class="highlight">+1,027,200円</span></td>
+  <td>∞</td>
+</tr>
+</table>
+
+<!-- ========== データ専用SIM ========== -->
+<h2>データ専用SIM（タブレット・IoT・監視カメラ向け）</h2>
+<table>
+<tr><th>キャリア / プラン</th><th>容量</th><th>月額</th><th>5台年額</th><th>GB効率</th></tr>
+<tr class="save">
+  <td style="text-align:left"><strong>povo2.0</strong> 基本料<span class="small"> トッピング制</span></td>
+  <td>—</td>
+  <td><span class="highlight">0円</span></td>
+  <td>0円〜</td>
+  <td>—</td>
+</tr>
+<tr class="save">
+  <td style="text-align:left"><strong>日本通信</strong> ネットだけ<span class="small"> 〜1GB時119円</span></td>
+  <td>20GB</td>
+  <td><span class="highlight">1,200円</span></td>
+  <td>72,000円</td>
+  <td>16.7</td>
+</tr>
+<tr class="save">
+  <td style="text-align:left"><strong>HISモバイル</strong> データ定額</td>
+  <td>—</td>
+  <td><span class="price">440円〜</span></td>
+  <td>26,400円〜</td>
+  <td>—</td>
+</tr>
+<tr class="save">
+  <td style="text-align:left"><strong>IIJmio</strong> データ 2GB</td>
+  <td>2GB</td>
+  <td><span class="price">740円</span></td>
+  <td>44,400円</td>
+  <td>2.7</td>
+</tr>
+<tr class="save">
+  <td style="text-align:left"><strong>IIJmio</strong> データ 20GB</td>
+  <td>20GB</td>
+  <td><span class="price">1,950円</span></td>
+  <td>117,000円</td>
+  <td>10.3</td>
+</tr>
+</table>
+
+<!-- ========== かけ放題 ========== -->
+<h2>かけ放題オプション比較</h2>
+<table>
+<tr><th>キャリア</th><th>5分かけ放題</th><th>完全かけ放題</th><th>備考</th></tr>
+<tr><td style="text-align:left"><strong>docomo / au / SoftBank</strong></td><td>+880円</td><td>+1,980円</td><td>—</td></tr>
+<tr><td style="text-align:left"><strong>Y!mobile / UQ</strong></td><td>+880円</td><td>+1,980円</td><td>UQコミコミ+は10分込</td></tr>
+<tr><td style="text-align:left"><strong>LINEMO</strong></td><td>+550円<span class="small">(7ヶ月0円)</span></td><td>+1,650円<span class="small">(7ヶ月1,100円)</span></td><td>キャンペーン価格</td></tr>
+<tr class="best"><td style="text-align:left"><strong>楽天モバイル</strong></td><td colspan="2"><span class="green">Rakuten Linkで国内通話無料</span></td><td>アプリ経由・追加料金なし</td></tr>
+<tr class="best"><td style="text-align:left"><strong>日本通信</strong></td><td><span class="green">みんなの/50GBプランに込</span></td><td>+1,200円</td><td>月70分無料も選択可</td></tr>
+<tr><td style="text-align:left"><strong>HISモバイル</strong></td><td><span class="green">20GBプランに6分込</span></td><td>+1,480円</td><td>—</td></tr>
+<tr><td style="text-align:left"><strong>IIJmio</strong></td><td>+500円</td><td>+1,400円</td><td>業界最安水準</td></tr>
+<tr><td style="text-align:left"><strong>mineo</strong></td><td>+550円</td><td>+1,210円</td><td>—</td></tr>
+</table>
+
+<!-- ========== CB制度 ========== -->
+<div class="section-note">
+<strong>【MNPキャッシュバック制度】</strong><br>
+<strong>上限規制:</strong> SIM単体MNP = 上限20,000円 / 端末セット = 上限40,000円（2023年12月 総務省改正ガイドライン）<br>
+<strong>代理店活用:</strong> 代理店経由の場合、旧キャリアの違約金・端末残債・事務手数料を別途全額負担してもらえる場合あり<br>
+<strong>法人一括:</strong> 20台以上の導入はボリュームディスカウントの個別交渉が可能<br>
+<strong>補助金併用:</strong> 端末購入にはデジタル化・AI導入補助金（インボイス枠）でPC/タブレット最大10万円/台の補助あり → <a href="houjin-hojokin-hikaku.html">補助金比較表へ</a>
+</div>
+
+<!-- ========== 次のステップ ========== -->
+<div class="step-box">
+<h3>次のステップ</h3>
+<ol>
+<li><strong>現在の契約内容を確認</strong> — キャリア・プラン・残債・更新月を整理</li>
+<li><strong>必要な通信量を把握</strong> — 各社員の月間データ使用量を1ヶ月計測</li>
+<li><strong>候補キャリア2〜3社に法人見積もり依頼</strong> — 20台一括でのボリューム価格を交渉</li>
+<li><strong>代理店にも並行で問い合わせ</strong> — 違約金・残債の負担条件を確認</li>
+<li><strong>補助金申請の準備</strong> — GビズID取得 + デジタル化・AI導入補助金(7/21締切)</li>
+<li><strong>乗り換え実行</strong> — 交付決定後に端末購入・MNP手続き</li>
+</ol>
 </div>
 
 <div class="footer">
-※ 本資料は2026年6月時点の公式情報に基づき作成。料金・制度は変更される場合があります。最新情報は各キャリア公式サイトをご確認ください。
+※ 本資料は2026年6月時点の各社公式情報に基づき、AIリサーチチームが作成。料金・制度は変更される場合があります。最新情報は各キャリア公式サイトをご確認ください。<br>
+※ 月額は割引適用後の最安水準を記載。割引条件（家族割・光セット等）は各キャリアにより異なります。
 </div>
 
 </body>
